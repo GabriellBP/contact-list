@@ -20,6 +20,7 @@ from contactlist import views
 
 router = routers.DefaultRouter()
 router.register(r'contacts', views.ContactViewSet)
+router.register(r'groups', views.GroupViewSet)
 
 
 urlpatterns = [

@@ -17,7 +17,7 @@ class Contact(models.Model):
     phone = models.CharField(max_length=16)
     email = models.EmailField()
     group = models.ForeignKey(Group, related_name='contacts', on_delete=models.CASCADE, blank=True, null=True)
-    image = models.TextField(blank=True, null=True)
+    picture = models.TextField(blank=True, null=True)
     created_date = models.DateTimeField(
             default=timezone.now)
 
